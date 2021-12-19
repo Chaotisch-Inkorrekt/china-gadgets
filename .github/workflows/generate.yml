@@ -16,7 +16,7 @@ jobs:
         run: sudo apt-get install perl cpanminus curl; sudo snap install yq
 
       - name: Download README.md
-        run: curl -s https://raw.githubusercontent.com/Minkorrekt-Fakts/minkorrekt_chinagadgets/master/README.md data/gadgets.md
+        run: curl -s https://raw.githubusercontent.com/Minkorrekt-Fakts/minkorrekt_chinagadgets/master/README.md -o data/gadgets.md
 
       #- name: Dump data/gadgets.md
       #  run: cat data/gadgets.md
