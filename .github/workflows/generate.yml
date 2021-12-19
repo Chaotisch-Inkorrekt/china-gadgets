@@ -1,0 +1,45 @@
+name: Retrieve gadget data
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Install packages
+        run: sudo apt-get install perl cpanminus curl; sudo snap install yq
+
+      - name: Download README.md
+        run: curl -s https://raw.githubusercontent.com/Minkorrekt-Fakts/minkorrekt_chinagadgets/master/README.md data/gadgets.md
+
+      #- name: Dump data/gadgets.md
+      #  run: cat data/gadgets.md
+
+      - name: Generate data/gadgets.yaml
+        run: |
+          perl -C -pe 's/\"/\\\"/g;s/\| ([0-9]+)\h*\| ([0-9]{2}\.[0-9]{2}\.[0-9]{4}) \| (?!-|\h)([^\|]+?)\h+\| ([^\|]*?)\h+\| ([^\|]*?)\h+\|/- episode: "$1"\n  date: "$2"\n  name: "$3"\n  link: $4\n  notes: $5/;s/^\|.*$//g;s/\[([^]]+)\]\(([^)]+)\),?/\n  - title: "$1"\n    url: "$2"/g;s/  link: ([^\h\v]+)/  link: "$1"/;s/^\s*$//' | \
+          yq e '[.[]]' - > /data/gadgets.yaml
+
+      #- name: Dump /data/gadgets.yaml
+      #  run: cat /data/gadgets.yaml
+
+      - name: Generate JSON output
+        run: yq eval -o=j /data/gadgets.yaml > /data/gadgets.json
+
+      #- name: Dump /data/gadgets.yaml
+      #  run: cat /data/gadgets.yaml
+
+      - name: Commit updated files
+        continue-on-error: true
+        run: |
+          git config --global user.name 'C!Gadgets Action'
+          git config --global user.email 'cgadgets-action@fenrikur.de'
+          git add /data/*.md /data/*.json /data/*.yaml
+          git commit -m "Updated gadget data from Minkorrekt-Fakts/minkorrekt_chinagadgets"
+          git push
