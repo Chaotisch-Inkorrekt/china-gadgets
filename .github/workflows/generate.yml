@@ -23,7 +23,7 @@ jobs:
 
       - name: Generate data/gadgets.yaml
         run: |
-          perl -C -pe 's/\"/\\\"/g;s/\| ([0-9]+)\h*\| ([0-9]{2}\.[0-9]{2}\.[0-9]{4}) \| (?!-|\h)([^\|]+?)\h+\| ([^\|]*?)\h+\| ([^\|]*?)\h+\|/- episode: "$1"\n  date: "$2"\n  name: "$3"\n  link: $4\n  notes: $5/;s/^\|.*$//g;s/\[([^]]+)\]\(([^)]+)\),?/\n  - title: "$1"\n    url: "$2"/g;s/  link: ([^\h\v]+)/  link: "$1"/;s/^\s*$//' | \
+          cat data/gadgets.md | perl -C -pe 's/\"/\\\"/g;s/\| ([0-9]+)\h*\| ([0-9]{2}\.[0-9]{2}\.[0-9]{4}) \| (?!-|\h)([^\|]+?)\h+\| ([^\|]*?)\h+\| ([^\|]*?)\h+\|/- episode: "$1"\n  date: "$2"\n  name: "$3"\n  link: $4\n  notes: $5/;s/^\|.*$//g;s/\[([^]]+)\]\(([^)]+)\),?/\n  - title: "$1"\n    url: "$2"/g;s/  link: ([^\h\v]+)/  link: "$1"/;s/^\s*$//' | \
           yq e '[.[]]' - > data/gadgets.yaml
 
       #- name: Dump /data/gadgets.yaml
