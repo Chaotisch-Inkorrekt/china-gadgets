@@ -29,7 +29,7 @@ foreach $episode (@$episodesData) {
 my $readmeTemplate = path($readmeTemplateFile)->slurp_utf8();
 my $htmlTemplate = path($htmlTemplateFile)->slurp_utf8();
 
-unlink glob "$htmlOutputPath/*.html";
+unlink glob "$htmlOutputDirectory/*.html";
 
 my @readmeGadgetsList = ();
 foreach $gadgetData (@$gadgetsData) {
