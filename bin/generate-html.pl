@@ -1,18 +1,15 @@
-use utf8;
+binmode STDOUT, ':utf8_strict';
+binmode STDERR, ':utf8_strict';
 
 use Path::Tiny;
 use YAML::XS 'LoadFile';
 
-binmode STDIN, ':encoding(utf-8)';
-binmode STDOUT, ':utf8';
-binmode STDERR, ':utf8';
-
 my $gadgetsFile         = './data/gadgets.local.yaml';
 my $episodesFile          = './data/minkorrekt-themen.unfiltered.yaml';
-my $readmeTemplateFile  = './README.tpl.md';
+my $readmeTemplateFile  = './bin/README.tpl.md';
 my $readmeOutputFile  = './README.md';
 my $htmlOutputDirectory = './html';
-my $htmlTemplateFile    = "$htmlOutputDirectory/gadget-000.tpl.html";
+my $htmlTemplateFile    = './bin/gadget-000.tpl.html';
 
 my $gadgetIdPattern = '%03s%s';
 my $htmlOutputPathPattern = "$htmlOutputDirectory/gadget-%s.html";
@@ -29,8 +26,10 @@ foreach $episode (@$episodesData) {
 	$episodes{$episode->{"episode"}} = $episode;
 }
 
-my $readmeTemplate = path($readmeTemplateFile)->slurp({binmode => ":encoding(UTF-8)"});
-my $htmlTemplate = path($htmlTemplateFile)->slurp({binmode => ":encoding(UTF-8)"});
+my $readmeTemplate = path($readmeTemplateFile)->slurp_utf8();
+my $htmlTemplate = path($htmlTemplateFile)->slurp_utf8();
+
+unlink glob "$htmlOutputPath/*.html";
 
 my @readmeGadgetsList = ();
 foreach $gadgetData (@$gadgetsData) {
@@ -61,52 +60,50 @@ foreach $gadgetData (@$gadgetsData) {
 	###
 	# Generate HTML file
 	###
-	if (!path($htmlOutputPath)->exists) {
-		my @imagesList = ();
-		foreach $imageData ($gadgetData->{'images'}->@*) {
-			my $image = $imagePattern =~ s/{{url}}/$imageData->{'url'}/gr;
+	my @imagesList = ();
+	foreach $imageData ($gadgetData->{'images'}->@*) {
+		my $image = $imagePattern =~ s/{{url}}/$imageData->{'url'}/gr;
 
-			if (length($imageData->{'title'}) > 0) {
-				$image =~ s/{{title}}/$imageData->{'title'}/g;
-			} else {
-				$image =~ s/{{title}}/$gadgetData->{'title'}/g;
-			}
-			push(@imagesList, $image);
+		if (length($imageData->{'title'}) > 0) {
+			$image =~ s/{{title}}/$imageData->{'title'}/g;
+		} else {
+			$image =~ s/{{title}}/$gadgetData->{'title'}/g;
 		}
-		my $images = join "\n", @imagesList;
-
-		my @linksList = ();
-		foreach $linkData ($gadgetData->{'links'}->@*) {
-			my $link = $linkPattern =~ s/{{url}}/$linkData->{'url'}/gr;
-			$link =~ s/{{title}}/$linkData->{'title'}/g;
-			push(@linksList, $link);
-		}
-		my $links = join "\n", @linksList;
-
-		my @imageSourcesList = ();
-		foreach $imageSourceData ($gadgetData->{'sources'}->@*) {
-			my $imageSource = $imageSourcePattern =~ s/{{url}}/$imageSourceData->{'url'}/gr;
-			$imageSource =~ s/{{title}}/$imageSourceData->{'title'}/g;
-			push(@imageSourcesList, $imageSource);
-		}
-		my $imageSources = join "\n", @imageSourcesList;
-
-		my $episode = $episodes{$gadgetData->{'episode'}};
-		my $html = $htmlTemplate =~ s/{{gadgetId}}/$gadgetData->{'gadget'}/gr;
-		$html =~ s/{{episode}}/$gadgetData->{'episode'}/g;
-		$html =~ s/{{gadgetTitle}}/$gadgetData->{'title'}/g;
-		$html =~ s/{{episodeDate}}/$gadgetData->{'date'}/g;
-		$html =~ s/{{episodeTitle}}/$episode->{'title'}/g;
-		$html =~ s/{{episodeLink}}/$episode->{'link'}/g;
-		$html =~ s/{{imageSources}}/$imageSources/g;
-		$html =~ s/{{links}}/$links/g;
-		$html =~ s/{{images}}/$images/g;
-
-		path($htmlOutputPath)->append($html);
+		push(@imagesList, $image);
 	}
+	my $images = join "\n", @imagesList;
+
+	my @linksList = ();
+	foreach $linkData ($gadgetData->{'links'}->@*) {
+		my $link = $linkPattern =~ s/{{url}}/$linkData->{'url'}/gr;
+		$link =~ s/{{title}}/$linkData->{'title'}/g;
+		push(@linksList, $link);
+	}
+	my $links = join "\n", @linksList;
+
+	my @imageSourcesList = ();
+	foreach $imageSourceData ($gadgetData->{'sources'}->@*) {
+		my $imageSource = $imageSourcePattern =~ s/{{url}}/$imageSourceData->{'url'}/gr;
+		$imageSource =~ s/{{title}}/$imageSourceData->{'title'}/g;
+		push(@imageSourcesList, $imageSource);
+	}
+	my $imageSources = join "\n", @imageSourcesList;
+
+	my $episode = $episodes{$gadgetData->{'episode'}};
+	my $html = $htmlTemplate =~ s/{{gadgetId}}/$gadgetData->{'gadget'}/gr;
+	$html =~ s/{{episode}}/$gadgetData->{'episode'}/g;
+	$html =~ s/{{gadgetTitle}}/$gadgetData->{'title'}/g;
+	$html =~ s/{{episodeDate}}/$gadgetData->{'date'}/g;
+	$html =~ s/{{episodeTitle}}/$episode->{'title'}/g;
+	$html =~ s/{{episodeLink}}/$episode->{'link'}/g;
+	$html =~ s/{{imageSources}}/$imageSources/g;
+	$html =~ s/{{links}}/$links/g;
+	$html =~ s/{{images}}/$images/g;
+
+	path($htmlOutputPath)->append_utf8($html);
 }
 
 my $readmeGadgets = join "\n", @readmeGadgetsList;
 $readmeTemplate =~ s/{{gadgets}}/$readmeGadgets/;
 
-path($readmeOutputFile)->append({truncate => true}, $readmeTemplate);
+path($readmeOutputFile)->append_utf8({truncate => true}, $readmeTemplate);

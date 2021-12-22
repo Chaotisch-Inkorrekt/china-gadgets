@@ -16,7 +16,7 @@ jobs:
         run: sudo apt-get install perl cpanminus curl; 
 
       - name: Install required CPAN modules
-        run: sudo cpanm Path::Tiny YAML::XS
+        run: sudo cpanm Path::Tiny YAML::XS PerlIO::utf8_strict
 
       - name: Download minkorrekt-themen.unfiltered.yaml
         run: curl -s https://raw.githubusercontent.com/Fenrikur/minkorrekt-topics/gh-pages/minkorrekt-themen.unfiltered.yaml -o data/minkorrekt-themen.unfiltered.yaml

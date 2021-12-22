@@ -6,7 +6,6 @@ Hier findet ihr eine Sammlung der China Gadgets aus den verschiedenen Episoden d
 
 | Gadget                            | Name     | Bildquellen                  |
 |-----------------------------------|----------|------------------------------|
-| [000](./html/gadget-000.tpl.html) | Beispiel | <https://example.com> (Name) |
 {{gadgets}}
 
 ## Datenquellen
