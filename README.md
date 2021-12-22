@@ -6,7 +6,6 @@ Hier findet ihr eine Sammlung der China Gadgets aus den verschiedenen Episoden d
 
 | Gadget                            | Name     | Bildquellen                  |
 |-----------------------------------|----------|------------------------------|
-| [000](./html/gadget-000.tpl.html) | Beispiel | <https://example.com> (Name) |
 | [161](./html/gadget-161.html) | Genug ist genug! |  |
 | [154](./html/gadget-154.html) | Sockensammler |  |
 | [153](./html/gadget-153.html) | Drehspardose |  |
