@@ -16,7 +16,7 @@ my $htmlTemplateFile    = "$htmlOutputDirectory/gadget-000.tpl.html";
 
 my $gadgetIdPattern = '%03s%s';
 my $htmlOutputPathPattern = "$htmlOutputDirectory/gadget-%s.html";
-my $imagePattern = '<img src="{{url}}" alt="{{title}}">';
+my $imagePattern = '<img src="{{url}}" title="{{title}}">';
 my $imageSourcePattern = '<li><a href="{{url}}">{{title}}</a></li>';
 my $linkPattern = '<li><a href="{{url}}">{{title}}</a></li>';
 my $readmeGadgetPattern = "| [{{gadgetId}}]({{htmlOutputPath}}) | {{title}} | {{sources}} |";
