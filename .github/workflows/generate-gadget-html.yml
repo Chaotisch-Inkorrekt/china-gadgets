@@ -1,0 +1,37 @@
+name: Retrieve gadget data
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Install packages
+        run: sudo apt-get install perl cpanminus curl; 
+
+      - name: Install required CPAN modules
+        run: sudo cpanm Path::Tiny YAML::XS
+
+      - name: Download minkorrekt-themen.unfiltered.yaml
+        run: curl -s https://raw.githubusercontent.com/Fenrikur/minkorrekt-topics/gh-pages/minkorrekt-themen.unfiltered.yaml -o data/minkorrekt-themen.unfiltered.yaml
+
+      - name: Dump data/minkorrekt-themen.unfiltered.yaml
+        run: cat data/minkorrekt-themen.unfiltered.yaml
+
+      - name: Generate README.md and HTML files from templates
+        run: perl bin/generate-html.pl
+
+      - name: Commit updated files
+        continue-on-error: true
+        run: |
+          git config --global user.name 'C!Gadgets Action'
+          git config --global user.email 'cgadgets-action@fenrikur.de'
+          git add html/*.html README.md
+          git commit -m "update README.md and HTML files"
+          git push
