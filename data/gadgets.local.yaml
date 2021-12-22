@@ -1,7 +1,8 @@
 - gadget: "161"
   episode: "161"
   date: "04.03.2020"
-  name: "Genug ist genug!"
+  title: "Genug ist genug!"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -9,7 +10,8 @@
 - gadget: "154"
   episode: "154"
   date: "05.11.2019"
-  name: "Sockensammler"
+  title: "Sockensammler"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -17,7 +19,8 @@
 - gadget: "153"
   episode: "153"
   date: "22.10.2019"
-  name: "Drehspardose"
+  title: "Drehspardose"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -25,7 +28,8 @@
 - gadget: "152"
   episode: "152"
   date: "08.10.2019"
-  name: "Bart Aufgang-Matte"
+  title: "Bart Aufgang-Matte"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -33,7 +37,8 @@
 - gadget: "151"
   episode: "151"
   date: "24.09.2019"
-  name: "Die helfende Hand"
+  title: "Die helfende Hand"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -41,7 +46,8 @@
 - gadget: "150"
   episode: "150"
   date: "28.08.2019"
-  name: "Teleskop-Blasrohr"
+  title: "Teleskop-Blasrohr"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -51,7 +57,8 @@
 - gadget: "146"
   episode: "146"
   date: "02.07.2019"
-  name: "Outdoorstrohalm"
+  title: "Outdoorstrohalm"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -59,7 +66,8 @@
 - gadget: "145"
   episode: "145"
   date: "18.06.2019"
-  name: "Wassermelonen Schneider"
+  title: "Wassermelonen Schneider"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -69,7 +77,8 @@
 - gadget: "144"
   episode: "144"
   date: "05.06.2019"
-  name: "Oxymeter"
+  title: "Oxymeter"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -77,7 +86,8 @@
 - gadget: "143"
   episode: "143"
   date: "21.05.2019"
-  name: "O-Key"
+  title: "O-Key"
+  images:
   sources:
   links:
     - title: "sicherungsbrille.de"
@@ -87,7 +97,8 @@
 - gadget: "142"
   episode: "142"
   date: "07.05.2019"
-  name: "Magic intellect Ball"
+  title: "Magic intellect Ball"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -95,7 +106,8 @@
 - gadget: "141"
   episode: "141"
   date: "09.04.2019"
-  name: "Magnetkugeln"
+  title: "Magnetkugeln"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -103,7 +115,8 @@
 - gadget: "140"
   episode: "140"
   date: "26.03.2019"
-  name: "Fizz-Saver"
+  title: "Fizz-Saver"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -111,7 +124,8 @@
 - gadget: "139"
   episode: "139"
   date: "12.03.2019"
-  name: "Handwärmer"
+  title: "Handwärmer"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -119,7 +133,8 @@
 - gadget: "138"
   episode: "138"
   date: "27.02.2019"
-  name: "Der Kern der Dinge"
+  title: "Der Kern der Dinge"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -127,7 +142,8 @@
 - gadget: "137"
   episode: "137"
   date: "12.02.2019"
-  name: "TDS Sensor von Xiaomi"
+  title: "TDS Sensor von Xiaomi"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -135,7 +151,8 @@
 - gadget: "136"
   episode: "136"
   date: "22.01.2019"
-  name: "Haare weg schmirgeln"
+  title: "Haare weg schmirgeln"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -143,7 +160,8 @@
 - gadget: "135"
   episode: "135"
   date: "08.01.2019"
-  name: "Seenotpfeife"
+  title: "Seenotpfeife"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -151,7 +169,8 @@
 - gadget: "134"
   episode: "134"
   date: "18.12.2018"
-  name: "Leuchtende Schürsenkel"
+  title: "Leuchtende Schürsenkel"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -159,7 +178,8 @@
 - gadget: "133"
   episode: "133"
   date: "04.12.2018"
-  name: "Die Trinkflasche mit App"
+  title: "Die Trinkflasche mit App"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -167,7 +187,8 @@
 - gadget: "132"
   episode: "132"
   date: "14.11.2018"
-  name: "Moon Drop"
+  title: "Moon Drop"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -175,7 +196,8 @@
 - gadget: "131"
   episode: "131"
   date: "29.10.2018"
-  name: "Beer Bong to go"
+  title: "Beer Bong to go"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -183,7 +205,8 @@
 - gadget: "130"
   episode: "130"
   date: "09.10.2018"
-  name: "Hilfe für die Hoffnungslosen"
+  title: "Hilfe für die Hoffnungslosen"
+  images:
   sources:
   links:
     - title: "banggood.com"
@@ -193,7 +216,8 @@
 - gadget: "129"
   episode: "129"
   date: "26.09.2018"
-  name: "Der Selbstzünder"
+  title: "Der Selbstzünder"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -201,7 +225,8 @@
 - gadget: "128"
   episode: "128"
   date: "10.09.2018"
-  name: "Haustier-Katzen-pflege Bad-Tasche"
+  title: "Haustier-Katzen-pflege Bad-Tasche"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -209,7 +234,8 @@
 - gadget: "127"
   episode: "127"
   date: "28.08.2018"
-  name: "Perfect Smile"
+  title: "Perfect Smile"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -219,7 +245,8 @@
 - gadget: "126"
   episode: "126"
   date: "14.08.2018"
-  name: "Flaschentornado"
+  title: "Flaschentornado"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -229,7 +256,8 @@
 - gadget: "125"
   episode: "125"
   date: "31.07.2018"
-  name: "Luftbefeuchter"
+  title: "Luftbefeuchter"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -239,7 +267,8 @@
 - gadget: "124"
   episode: "124"
   date: "17.07.2018"
-  name: "Elektrische Karafierpumpe"
+  title: "Elektrische Karafierpumpe"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -249,7 +278,8 @@
 - gadget: "122"
   episode: "122"
   date: "19.06.2018"
-  name: "Magnetische Schnürsenkel"
+  title: "Magnetische Schnürsenkel"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -257,7 +287,8 @@
 - gadget: "121"
   episode: "121"
   date: "29.05.2018"
-  name: "Rollstempel"
+  title: "Rollstempel"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -265,7 +296,8 @@
 - gadget: "119"
   episode: "119"
   date: "01.05.2018"
-  name: "Sound-Machine"
+  title: "Sound-Machine"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -273,7 +305,8 @@
 - gadget: "118"
   episode: "118"
   date: "17.04.2018"
-  name: "Solar Lighter"
+  title: "Solar Lighter"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -281,7 +314,8 @@
 - gadget: "117"
   episode: "117"
   date: "03.04.2018"
-  name: "Building Bonanza"
+  title: "Building Bonanza"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -289,7 +323,8 @@
 - gadget: "116"
   episode: "116"
   date: "20.03.2018"
-  name: "Anti Lost Walking Hand Gürtel"
+  title: "Anti Lost Walking Hand Gürtel"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -297,7 +332,8 @@
 - gadget: "115"
   episode: "115"
   date: "27.02.2018"
-  name: "Beamer"
+  title: "Beamer"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -305,7 +341,8 @@
 - gadget: "114"
   episode: "114"
   date: "13.02.2018"
-  name: "mokuru"
+  title: "mokuru"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -315,7 +352,8 @@
 - gadget: "113"
   episode: "113"
   date: "30.01.2018"
-  name: "Bartschablone"
+  title: "Bartschablone"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -323,7 +361,8 @@
 - gadget: "112"
   episode: "112"
   date: "18.01.2018"
-  name: "LED Toilette Licht"
+  title: "LED Toilette Licht"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -331,7 +370,14 @@
 - gadget: "110"
   episode: "110"
   date: "12.12.2017"
-  name: "Fliegende Christbaumkugel"
+  title: "Fliegende Christbaumkugel"
+  images:
+    - title: ""
+      url: "./img/gadget-110-1.jpg"
+    - title: ""
+      url: "./img/gadget-110-2.jpg"
+    - title: ""
+      url: "./img/gadget-110-3.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://www.dropbox.com/sh/nm8474sf0f03gjp/AAA-H22aSHKkJwPLP_1WkPvoa"
@@ -341,7 +387,8 @@
 - gadget: "109"
   episode: "109"
   date: "28.11.2017"
-  name: "Dael-O-Ring"
+  title: "Dael-O-Ring"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -349,7 +396,8 @@
 - gadget: "108"
   episode: "108"
   date: "14.11.2017"
-  name: "Lippen Vergrößern Pumpe Schmollmund"
+  title: "Lippen Vergrößern Pumpe Schmollmund"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -357,7 +405,16 @@
 - gadget: "107"
   episode: "107"
   date: "30.10.2017"
-  name: "Nasenformer"
+  title: "Nasenformer"
+  images:
+    - title: ""
+      url: "./img/gadget-107-1.jpg"
+    - title: ""
+      url: "./img/gadget-107-2.jpg"
+    - title: ""
+      url: "./img/gadget-107-3.jpg"
+    - title: ""
+      url: "./img/gadget-107-4.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://www.dropbox.com/sh/8dgahnovu982udp/AACqEuVIZk2og7giU4xhHtdpa"
@@ -369,7 +426,8 @@
 - gadget: "106"
   episode: "106"
   date: "17.10.2017"
-  name: "Heizung Butter Messer Elektrisch"
+  title: "Heizung Butter Messer Elektrisch"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -377,7 +435,8 @@
 - gadget: "105"
   episode: "105"
   date: "20.09.2017"
-  name: "LED Strahler Flash Selfie Ring"
+  title: "LED Strahler Flash Selfie Ring"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -385,7 +444,8 @@
 - gadget: "104"
   episode: "104"
   date: "06.09.2017"
-  name: "Autorotation Rotating Nut Magic"
+  title: "Autorotation Rotating Nut Magic"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -393,7 +453,8 @@
 - gadget: "103"
   episode: "103"
   date: "22.08.2017"
-  name: "Schnürsenkel Klemme Schleifenersatz"
+  title: "Schnürsenkel Klemme Schleifenersatz"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -401,7 +462,8 @@
 - gadget: "102"
   episode: "102"
   date: "01.08.2017"
-  name: "PowerLead Nackenmassage"
+  title: "PowerLead Nackenmassage"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -409,7 +471,8 @@
 - gadget: "101"
   episode: "101"
   date: "15.07.2017"
-  name: "Transistor Tester"
+  title: "Transistor Tester"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -417,7 +480,8 @@
 - gadget: "99"
   episode: "99"
   date: "27.06.2017"
-  name: "Scharfer Hügel Wassermelone Slicer"
+  title: "Scharfer Hügel Wassermelone Slicer"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -427,7 +491,8 @@
 - gadget: "98"
   episode: "98"
   date: "14.06.2017"
-  name: "Angry Mama Mikrowellen Reiniger"
+  title: "Angry Mama Mikrowellen Reiniger"
+  images:
   sources:
   links:
     - title: "coolstuff.de"
@@ -437,7 +502,8 @@
 - gadget: "97"
   episode: "97"
   date: "29.05.2017"
-  name: "Theo lass laufen"
+  title: "Theo lass laufen"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -445,7 +511,16 @@
 - gadget: "96"
   episode: "96"
   date: "14.05.2017"
-  name: "elektronisches Feuerzeug lichtbogen"
+  title: "elektronisches Feuerzeug lichtbogen"
+  images:
+    - title: ""
+      url: "./img/gadget-096-1.jpg"
+    - title: ""
+      url: "./img/gadget-096-2.jpg"
+    - title: ""
+      url: "./img/gadget-096-3.jpg"
+    - title: ""
+      url: "./img/gadget-096-4.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://www.dropbox.com/sc/am2flv4d24tmwjc/AAA-xkucuvzdQljE7jHPs9fSa"
@@ -457,7 +532,8 @@
 - gadget: "95"
   episode: "95"
   date: "28.04.2017"
-  name: "Nail Clipper Pro"
+  title: "Nail Clipper Pro"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -465,7 +541,8 @@
 - gadget: "94"
   episode: "94"
   date: "11.04.2017"
-  name: "Fingertrainer"
+  title: "Fingertrainer"
+  images:
   sources:
   links:
     - title: "aliexpress"
@@ -473,16 +550,18 @@
 - gadget: "93"
   episode: "93"
   date: "28.03.2017"
-  name: "Fiction Pen Tintenroller"
+  title: "Fiction Pen Tintenroller"
+  images:
   sources:
   links:
     - title: "Amazon.de"
       url: "https://www.amazon.de/dp/B005ELBX92/?tag=minkorrekt-21"
 - gadget: "92"
   episode: "92"
+  images:
   sources:
   date: "07.03.2017"
-  name: "Say my name, say my name"
+  title: "Say my name, say my name"
   links:
     - title: "Amazon.de"
       url: "https://www.amazon.de/dp/B01F0TGFAO/?tag=minkorrekt-21"
@@ -491,7 +570,12 @@
 - gadget: "91"
   episode: "91"
   date: "21.02.2017"
-  name: "Elektrischer Radierergummi"
+  title: "Elektrischer Radierergummi"
+  images:
+    - title: ""
+      url: "./img/gadget-091-1.jpg"
+    - title: ""
+      url: "./img/gadget-091-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://photos.google.com/share/AF1QipMpmc7-C9ELnEVdNoVgVSqUdB2vEycLNOvQdtJwC514SOf26h1MGhmUn51B8m023g?key=SmhUZWkzOE01NlNTSU4zdU9aRlZLWlFqRzRTWmZn"
@@ -503,7 +587,8 @@
 - gadget: "90"
   episode: "90"
   date: "08.02.2017"
-  name: "Fidget Cube"
+  title: "Fidget Cube"
+  images:
   sources:
   links:
     - title: "aliexpress.com"
@@ -511,7 +596,8 @@
 - gadget: "89"
   episode: "89"
   date: "24.01.2017"
-  name: "Der Kettenreiniger"
+  title: "Der Kettenreiniger"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -519,7 +605,8 @@
 - gadget: "88"
   episode: "88"
   date: "10.01.2017"
-  name: "Der Sojasoßenspender"
+  title: "Der Sojasoßenspender"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -527,7 +614,8 @@
 - gadget: "87"
   episode: "87"
   date: "13.12.2016"
-  name: "The Drumsticks of hell"
+  title: "The Drumsticks of hell"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -535,14 +623,16 @@
 - gadget: "86"
   episode: "86"
   date: "29.11.2016"
-  name: "Beat it"
+  title: "Beat it"
+  images:
   sources:
   links:
   notes: musste wegen postalischer Probleme leider entfallen
 - gadget: "85"
   episode: "85"
   date: "15.11.2016"
-  name: "Spectre Hologram"
+  title: "Spectre Hologram"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -550,7 +640,8 @@
 - gadget: "84"
   episode: "84"
   date: "26.10.2016"
-  name: "Der Aufmerksamkeitsassitent"
+  title: "Der Aufmerksamkeitsassitent"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -558,7 +649,8 @@
 - gadget: "83"
   episode: "83"
   date: "11.10.2016"
-  name: "Glasello"
+  title: "Glasello"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -566,19 +658,24 @@
 - gadget: "82"
   episode: "82"
   date: "27.09.2016"
-  name: "Der Bierkühler und -wärmer"
+  title: "Der Bierkühler und -wärmer"
+  images:
   sources:
   links:
 - gadget: "81"
   episode: "81"
   date: "13.09.2016"
-  name: "Handymicroskop"
+  title: "Handymicroskop"
+  images:
   sources:
   links:
 - gadget: "79"
   episode: "79"
   date: "02.08.2016"
-  name: "Das Solarfahrzeug"
+  title: "Das Solarfahrzeug"
+  images:
+    - title: ""
+      url: "./img/gadget-079-1.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://www.dropbox.com/sc/cmmohck718gag13/AADPZE848u9mIbr3Pv18FyZ1a"
@@ -588,13 +685,17 @@
 - gadget: "78"
   episode: "78"
   date: "19.07.2016"
-  name: "Fussball Glückskekse"
+  title: "Fussball Glückskekse"
+  images:
   sources:
   links:
 - gadget: "77"
   episode: "77"
   date: "28.06.2016"
-  name: "China on the Rocks"
+  title: "China on the Rocks"
+  images:
+    - title: ""
+      url: "./img/gadget-077-1.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://goo.gl/photos/df3p1YxNC8VJ9yxdA"
@@ -604,7 +705,10 @@
 - gadget: "76"
   episode: "76"
   date: "14.06.2016"
-  name: "Der Hubschrauber"
+  title: "Der Hubschrauber"
+  images:
+    - title: ""
+      url: "./img/gadget-076-1.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://goo.gl/photos/ccXMyYPcDnfjsH339"
@@ -616,13 +720,21 @@
 - gadget: "75"
   episode: "75"
   date: "01.06.2016"
-  name: "Eier-Guillotine"
+  title: "Eier-Guillotine"
+  images:
   sources:
   links:
 - gadget: "74"
   episode: "74"
   date: "17.05.2016"
-  name: "Der Zauberwurm!"
+  title: "Der Zauberwurm!"
+  images:
+    - title: ""
+      url: "./img/gadget-074-1.jpg"
+    - title: ""
+      url: "./img/gadget-074-2.jpg"
+    - title: ""
+      url: "./img/gadget-074-3.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://goo.gl/photos/XACvQkVdiY7amQuAA"
@@ -632,13 +744,19 @@
 - gadget: "73"
   episode: "73"
   date: "03.05.2016"
-  name: "Diamond Selector II"
+  title: "Diamond Selector II"
+  images:
   sources:
   links:
 - gadget: "72"
   episode: "72"
   date: "19.04.2016"
-  name: "It’s Magic!"
+  title: "It’s Magic!"
+  images:
+    - title: ""
+      url: "./img/gadget-072-1.jpg"
+    - title: ""
+      url: "./img/gadget-072-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://goo.gl/photos/oH7k79JQXsLmnvoeA"
@@ -648,7 +766,14 @@
 - gadget: "71"
   episode: "71"
   date: "05.04.2016"
-  name: "Blaseaffe"
+  title: "Blaseaffe"
+  images:
+    - title: ""
+      url: "./img/gadget-071-1.jpg"
+    - title: ""
+      url: "./img/gadget-071-2.jpg"
+    - title: ""
+      url: "./img/gadget-071-3.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://goo.gl/photos/DxPLmhY74xzDRi7W7"
@@ -658,7 +783,8 @@
 - gadget: "70.1"
   episode: "70"
   date: "22.03.2016"
-  name: "Blas-Fix"
+  title: "Blas-Fix"
+  images:
   sources:
   links:
     - title: "Amazon.de"
@@ -666,7 +792,8 @@
 - gadget: "70.2"
   episode: "70"
   date: "22.03.2016"
-  name: "Egg-Stractor"
+  title: "Egg-Stractor"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -674,7 +801,22 @@
 - gadget: "69"
   episode: "69"
   date: "08.03.2016"
-  name: "Jala neti - Nasendusche"
+  title: "Jala neti - Nasendusche"
+  images:
+    - title: ""
+      url: "./img/gadget-069-1.jpg"
+    - title: ""
+      url: "./img/gadget-069-2.jpg"
+    - title: ""
+      url: "./img/gadget-069-3.jpg"
+    - title: ""
+      url: "./img/gadget-069-4.jpg"
+    - title: ""
+      url: "./img/gadget-069-5.jpg"
+    - title: ""
+      url: "./img/gadget-069-6.jpg"
+    - title: ""
+      url: "./img/gadget-069-7.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipOvaDYAucGn9gildHwVe72AW7hFCiPf_IjDKTzQ?source=pwa"
@@ -684,7 +826,12 @@
 - gadget: "68"
   episode: "68"
   date: "09.02.2016"
-  name: "Gummibandpistole"
+  title: "Gummibandpistole"
+  images:
+    - title: ""
+      url: "./img/gadget-068-1.jpg"
+    - title: ""
+      url: "./img/gadget-068-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipO1lvtF1vG6YCKnjLrIGl-MfP9WD_M5sTQ2gywI"
@@ -694,7 +841,8 @@
 - gadget: "67.1"
   episode: "67"
   date: "26.01.2016"
-  name: "Blumentopf mit integrierter Wolke"
+  title: "Blumentopf mit integrierter Wolke"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -702,7 +850,8 @@
 - gadget: "67.2"
   episode: "67"
   date: "26.01.2016"
-  name: "Weinglashalter zum umhängen"
+  title: "Weinglashalter zum umhängen"
+  images:
   sources:
   links:
     - title: "china-gadgets.de"
@@ -710,7 +859,12 @@
 - gadget: "66"
   episode: "66"
   date: "12.01.2016"
-  name: "Die Nasenflöte!"
+  title: "Die Nasenflöte!"
+  images:
+    - title: ""
+      url: "./img/gadget-066-1.jpg"
+    - title: ""
+      url: "./img/gadget-066-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipMAyAZYrAlm3lnwINsgR7qI4CVaqr8zZxKwmw6r"
@@ -722,19 +876,32 @@
 - gadget: "64"
   episode: "64"
   date: "08.12.2015"
-  name: "Zitrone zum aufsprühen"
+  title: "Zitrone zum aufsprühen"
+  images:
   sources:
   links:
 - gadget: "63"
   episode: "63"
   date: "24.11.2015"
-  name: "Sturmstreichhölzer"
+  title: "Sturmstreichhölzer"
+  images:
   sources:
   links:
 - gadget: "62"
   episode: "62"
   date: "10.11.2015"
-  name: "Der Ökotacker"
+  title: "Der Ökotacker"
+  images:
+    - title: ""
+      url: "./img/gadget-062-1.jpg"
+    - title: ""
+      url: "./img/gadget-062-2.jpg"
+    - title: ""
+      url: "./img/gadget-062-3.jpg"
+    - title: ""
+      url: "./img/gadget-062-4.jpg"
+    - title: ""
+      url: "./img/gadget-062-5.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipO8am3lPq1m1KOfna6xJ55dM4POLzY6jsBzYcfY"
@@ -744,25 +911,29 @@
 - gadget: "61"
   episode: "61"
   date: "26.10.2015"
-  name: "Tschunk-Notsignal"
+  title: "Tschunk-Notsignal"
+  images:
   sources:
   links:
 - gadget: "60"
   episode: "60"
   date: "13.10.2015"
-  name: "Vakuumverschluß für Weinflaschen"
+  title: "Vakuumverschluß für Weinflaschen"
+  images:
   sources:
   links:
 - gadget: "59"
   episode: "59"
   date: "29.09.2015"
-  name: "Antibrum Spezial-Edition"
+  title: "Antibrum Spezial-Edition"
+  images:
   sources:
   links:
 - gadget: "58"
   episode: "58"
   date: "15.09.2015"
-  name: "Die Wurstspirale"
+  title: "Die Wurstspirale"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -770,7 +941,8 @@
 - gadget: "57"
   episode: "57"
   date: "31.08.2015"
-  name: "magnetische Sanduhr"
+  title: "magnetische Sanduhr"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -778,13 +950,19 @@
 - gadget: "56"
   episode: "56"
   date: "04.08.2015"
-  name: "tritium trigaglow"
+  title: "tritium trigaglow"
+  images:
   sources:
   links:
 - gadget: "55"
   episode: "55"
   date: "21.06.2015"
-  name: "Thermometerband"
+  title: "Thermometerband"
+  images:
+    - title: ""
+      url: "./img/gadget-055-1.jpg"
+    - title: ""
+      url: "./img/gadget-055-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipN-I2iJe3hv8cIV2VKImkKsINKmgjtLIBgpAHiz?authKey=CPuPi6n92a3JUQ"
@@ -794,7 +972,12 @@
 - gadget: "54"
   episode: "54"
   date: "07.07.2015"
-  name: "Gefüllte Burger"
+  title: "Gefüllte Burger"
+  images:
+    - title: ""
+      url: "./img/gadget-054-1.jpg"
+    - title: ""
+      url: "./img/gadget-054-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipNPE1-0maY1Ux3g_s2qGTIVCsLlefJ2W1I_GWmP"
@@ -804,7 +987,8 @@
 - gadget: "53"
   episode: "53"
   date: "23.06.2015"
-  name: "Doodling Robot"
+  title: "Doodling Robot"
+  images:
   sources:
   links:
     - title: "china-gadgets.de"
@@ -812,7 +996,8 @@
 - gadget: "52"
   episode: "52"
   date: "09.06.2015"
-  name: "Ein Hamster der spricht"
+  title: "Ein Hamster der spricht"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -820,13 +1005,15 @@
 - gadget: "51"
   episode: "51"
   date: "26.05.2015"
-  name: "der Rollwecker"
+  title: "der Rollwecker"
+  images:
   sources:
   links:
 - gadget: "50"
   episode: "50"
   date: "12.05.2015"
-  name: "cartesische Taucher"
+  title: "cartesische Taucher"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -836,19 +1023,22 @@
 - gadget: "49"
   episode: "49"
   date: "28.04.2015"
-  name: "The magic Seller"
+  title: "The magic Seller"
+  images:
   sources:
   links:
 - gadget: "48"
   episode: "48"
   date: "14.04.2015"
-  name: "Promilletester"
+  title: "Promilletester"
+  images:
   sources:
   links:
 - gadget: "47"
   episode: "47"
   date: "24.03.2015"
-  name: "Kane Sa Luk Starterkit"
+  title: "Kane Sa Luk Starterkit"
+  images:
   sources:
   links:
     - title: "YouTube (via yewtu.be)"
@@ -856,7 +1046,8 @@
 - gadget: "46"
   episode: "46"
   date: "10.03.2015"
-  name: "Linsen für sein iPhone"
+  title: "Linsen für sein iPhone"
+  images:
   sources:
   links:
     - title: "china-gadgets.de"
@@ -864,7 +1055,10 @@
 - gadget: "45"
   episode: "45"
   date: "24.02.2015"
-  name: "Einsteins Ente"
+  title: "Einsteins Ente"
+  images:
+    - title: ""
+      url: "./img/gadget-045-1.jpg"
   sources:
   links:
     - title: "china-gadgets.de"
@@ -874,19 +1068,28 @@
 - gadget: "38"
   episode: "38"
   date: "18.11.2014"
-  name: "Thinking Putty"
+  title: "Thinking Putty"
+  images:
+    - title: ""
+      url: "./img/gadget-038-1.jpg"
   sources:
   links:
 - gadget: "36"
   episode: "36"
   date: "21.10.2014"
-  name: "Urzeitkrebse"
+  title: "Urzeitkrebse"
+  images:
+    - title: ""
+      url: "./img/gadget-036-1.jpg"
   sources:
   links:
 - gadget: "35"
   episode: "35"
   date: "07.10.2014"
-  name: "Elektromagentischer Felddetektor"
+  title: "Elektromagentischer Felddetektor"
+  images:
+    - title: ""
+      url: "./img/gadget-035-1.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipOgmBuHd6LkA5B-vxkl4clloH6vmGvg98utaR7T/AF1QipNUk4U-4hwu7UVD8Bqr7TLSOP45KxQ8tXQ9T6AL"
@@ -894,13 +1097,15 @@
 - gadget: "34"
   episode: "34"
   date: "22.09.2014"
-  name: "Stell dich nicht so an"
+  title: "Stell dich nicht so an"
+  images:
   sources:
   links:
 - gadget: "33"
   episode: "33"
   date: "09.09.2014"
-  name: "Ostrich Pillow"
+  title: "Ostrich Pillow"
+  images:
   sources:
   links:
     - title: "china-gadgets.de"
@@ -908,7 +1113,10 @@
 - gadget: "32"
   episode: "32"
   date: "27.08.2014"
-  name: "Motorisierter Papierflieger"
+  title: "Motorisierter Papierflieger"
+  images:
+    - title: ""
+      url: "./img/gadget-032-1.jpg"
   sources:
   links:
     - title: "china-gadgets.de"
@@ -916,7 +1124,8 @@
 - gadget: "23"
   episode: "23"
   date: "25.03.2014"
-  name: "Antigravitationskreisel"
+  title: "Antigravitationskreisel"
+  images:
   sources:
   links:
     - title: "eBay.de"
@@ -926,7 +1135,10 @@
 - gadget: "5"
   episode: "5"
   date: "16.07.2013"
-  name: "Regenbogenmacherdingsi"
+  title: "Regenbogenmacherdingsi"
+  images:
+    - title: ""
+      url: "./img/gadget-005-1.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipMcpwcXSvZtPHACwfwI-6DUqKCPgXn8V6PAtOR3?source=pwa"
@@ -936,7 +1148,12 @@
 - gadget: "4"
   episode: "4"
   date: "03.07.2013"
-  name: "PET-Bewässerung"
+  title: "PET-Bewässerung"
+  images:
+    - title: ""
+      url: "./img/gadget-004-1.jpg"
+    - title: ""
+      url: "./img/gadget-004-2.jpg"
   sources:
     - title: "Minkorrekt UG"
       url: "https://get.google.com/albumarchive/107341743493109591753/album/AF1QipOFHLdJGRd-SuBmG1JxGm0DIJf3Q43jrNrBWJgR?source=pwa&authKey=CPPL1prh7MSrQQ"

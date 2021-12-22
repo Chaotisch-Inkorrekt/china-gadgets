@@ -16,9 +16,10 @@ my $htmlTemplateFile    = "$htmlOutputDirectory/gadget-000.tpl.html";
 
 my $gadgetIdPattern = '%03s%s';
 my $htmlOutputPathPattern = "$htmlOutputDirectory/gadget-%s.html";
+my $imagePattern = '<img src="{{url}}" alt="{{title}}">';
 my $imageSourcePattern = '<li><a href="{{url}}">{{title}}</a></li>';
 my $linkPattern = '<li><a href="{{url}}">{{title}}</a></li>';
-my $readmeGadgetPattern = "| [{{gadget}}]({{htmlOutputPath}}) | {{name}} | {{sources}} |";
+my $readmeGadgetPattern = "| [{{gadgetId}}]({{htmlOutputPath}}) | {{title}} | {{sources}} |";
 my $readmeGadgetSourcePattern = "<{{url}}> ({{title}})";
 
 my $gadgetsData = LoadFile($gadgetsFile);
@@ -32,8 +33,8 @@ my $readmeTemplate = path($readmeTemplateFile)->slurp({binmode => ":encoding(UTF
 my $htmlTemplate = path($htmlTemplateFile)->slurp({binmode => ":encoding(UTF-8)"});
 
 my @readmeGadgetsList = ();
-foreach $gadget (@$gadgetsData) {
-	my ($gadgetMajor, $gadgetMinor) = split(/\./,$gadget->{'gadget'});
+foreach $gadgetData (@$gadgetsData) {
+	my ($gadgetMajor, $gadgetMinor) = split(/\./,$gadgetData->{'gadget'});
 	if(length($gadgetMinor) > 0) {
 		$gadgetMinor = ".$gadgetMinor";
 	}
@@ -44,16 +45,16 @@ foreach $gadget (@$gadgetsData) {
 	# Generate lines for README.md
 	###
 	my @readmeGadgetSourcesList = ();
-	foreach $source ($gadget->{'sources'}->@*) {
+	foreach $source ($gadgetData->{'sources'}->@*) {
 		my $readmeGadgetSource = $readmeGadgetSourcePattern =~ s/{{url}}/$source->{'url'}/gr;
 		$readmeGadgetSource =~ s/{{title}}/$source->{'title'}/g;
 		push(@readmeGadgetSourcesList, $readmeGadgetSource);
 	}
 	my $readmeGadgetSources = join ', ', @readmeGadgetSourcesList;
 
-	my $readmeGadget = $readmeGadgetPattern =~ s/{{gadget}}/$gadgetId/gr;
+	my $readmeGadget = $readmeGadgetPattern =~ s/{{gadgetId}}/$gadgetId/gr;
 	$readmeGadget =~ s/{{htmlOutputPath}}/$htmlOutputPath/g;
-	$readmeGadget =~ s/{{name}}/$gadget->{'name'}/g;
+	$readmeGadget =~ s/{{title}}/$gadgetData->{'title'}/g;
 	$readmeGadget =~ s/{{sources}}/$readmeGadgetSources/g;
 	push(@readmeGadgetsList, $readmeGadget);
 
@@ -61,8 +62,21 @@ foreach $gadget (@$gadgetsData) {
 	# Generate HTML file
 	###
 	if (!path($htmlOutputPath)->exists) {
+		my @imagesList = ();
+		foreach $imageData ($gadgetData->{'images'}->@*) {
+			my $image = $imagePattern =~ s/{{url}}/$imageData->{'url'}/gr;
+
+			if (length($imageData->{'title'}) > 0) {
+				$image =~ s/{{title}}/$imageData->{'title'}/g;
+			} else {
+				$image =~ s/{{title}}/$gadgetData->{'title'}/g;
+			}
+			push(@imagesList, $image);
+		}
+		my $images = join "\n", @imagesList;
+
 		my @linksList = ();
-		foreach $linkData ($gadget->{'links'}->@*) {
+		foreach $linkData ($gadgetData->{'links'}->@*) {
 			my $link = $linkPattern =~ s/{{url}}/$linkData->{'url'}/gr;
 			$link =~ s/{{title}}/$linkData->{'title'}/g;
 			push(@linksList, $link);
@@ -70,20 +84,18 @@ foreach $gadget (@$gadgetsData) {
 		my $links = join "\n", @linksList;
 
 		my @imageSourcesList = ();
-		foreach $imageSourceData ($gadget->{'sources'}->@*) {
+		foreach $imageSourceData ($gadgetData->{'sources'}->@*) {
 			my $imageSource = $imageSourcePattern =~ s/{{url}}/$imageSourceData->{'url'}/gr;
 			$imageSource =~ s/{{title}}/$imageSourceData->{'title'}/g;
 			push(@imageSourcesList, $imageSource);
 		}
 		my $imageSources = join "\n", @imageSourcesList;
 
-		my $images = 'TODOs';
-
-		my $episode = $episodes{$gadget->{'episode'}};
-		my $html = $htmlTemplate =~ s/{{gadget}}/$gadget->{'gadget'}/gr;
-		$html =~ s/{{episode}}/$gadget->{'episode'}/g;
-		$html =~ s/{{gadgetName}}/$gadget->{'name'}/g;
-		$html =~ s/{{episodeDate}}/$gadget->{'date'}/g;
+		my $episode = $episodes{$gadgetData->{'episode'}};
+		my $html = $htmlTemplate =~ s/{{gadgetId}}/$gadgetData->{'gadget'}/gr;
+		$html =~ s/{{episode}}/$gadgetData->{'episode'}/g;
+		$html =~ s/{{gadgetTitle}}/$gadgetData->{'title'}/g;
+		$html =~ s/{{episodeDate}}/$gadgetData->{'date'}/g;
 		$html =~ s/{{episodeTitle}}/$episode->{'title'}/g;
 		$html =~ s/{{episodeLink}}/$episode->{'link'}/g;
 		$html =~ s/{{imageSources}}/$imageSources/g;
