@@ -23,7 +23,7 @@ jobs:
 
       - name: Generate data/gadgets.remote.yaml
         run: |
-          cat data/gadgets.remote.md | perl -C -pe 's/\"/\\\"/g;s/\| ([0-9]+)\h*\| ([0-9]{2}\.[0-9]{2}\.[0-9]{4}) \| (?!-|\h)([^\|]+?)\h+\| ([^\|]*?)\h+\| ([^\|]*?)\h+\|/- episode: "$1"\n  date: "$2"\n  name: "$3"\n  links: $4\n  notes: $5/;s/^\|.*$//g;s/\[([^]]+)\]\(([^)]+)\),?/\n  - title: "$1"\n    url: "$2"/g;s/  link: ([^\h\v]+)/  link: "$1"/;s/^\s*$//;' | \
+          cat data/gadgets.remote.md | perl -C -pe 's/\"/\\\"/g;s/\| ([0-9]+)\h*\| ([0-9]{2}\.[0-9]{2}\.[0-9]{4}) \| (?!-|\h)([^\|]+?)\h+\| ([^\|]*?)\h+\| ([^\|]*?)\h+\|/- gadget: "$1"\n  episode: "$1"\n  date: "$2"\n  name: "$3"\n  sources:\n  links: $4 $5/;s/^\|.*$//g;s/\[([^]]+)\]\(([^)]+)\),?/\n    - title: "$1"\n      url: "$2"/g;s/  link: ([^\h\v]+)/  link: "$1"/;s/^\s*$//g;' | \
           yq e '[.[]]' - > data/gadgets.remote.yaml
 
       - name: Dump /data/gadgets.remote.yaml
